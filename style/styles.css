@@ -1,0 +1,81 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(70, 0, 233);
+}
+.title {
+    color: rgb(8, 247, 0);
+}
+
+.cabeza {
+    background-color:yellow;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 7px solid black;
+    animation-name: sus;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    position: relative;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sus {
+    0%{background: yellow; left: 0;top: 0px;}
+    25%{background: rgb(248, 7, 7);left: 300px;top: 0px;}
+    50%{background: rgb(46, 0, 253);left: 300px;top: 300px;}
+    75%{background: rgb(255, 0, 234);left: 0px;top: 300px;}
+    100%{background: yellow;;left: 0px;top: 0px;}
+}
+@keyframes sis {
+    0%{background: yellow;}
+    25%{background: rgb(248, 7, 7)}
+    50%{background: rgb(46, 0, 253)}
+    75%{background: rgb(255, 0, 234)}
+    100%{background: yellow;}
+}
+
+.frente {
+    background-color:yellow;
+    height: 90px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: sis;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    position: relative;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.ojo-iz {
+    background-color: aqua;
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    border: 7px solid black;
+}
+
+.ojo-de {
+    background-color: aqua;
+    height: 30px;
+    width: 30px;
+    margin-left: 40px;
+    margin-top: 20px;
+    border: 7px solid black;
+}
+
+.boca {
+    background-color: aqua;
+    height: 30px;
+    width: 140px;
+    margin-top: -40px;
+    border: 7px solid black;
+}
